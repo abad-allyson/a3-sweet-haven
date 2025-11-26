@@ -302,7 +302,7 @@
                 0997-842-9897
               </p>
 
-              <div class="mt-4">
+              <div class="my-4">
                 <p class="font-bold">Google Maps Pin</p>
                 <ULink
                   to="https://www.google.com/maps/place/A3+Sweet+Haven/@14.3974294,120.8424442,17z/data=!3m1!4b1!4m6!3m5!1s0x33962df777040509:0xa25e80dbd0065804!8m2!3d14.3974294!4d120.8450245!16s%2Fg%2F11pv9h68js?entry=ttu&g_ep=EgoyMDI1MTEwNS4wIKXMDSoASAFQAw%3D%3D"
