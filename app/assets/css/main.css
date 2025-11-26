@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --color-main-50: #fff1f1;
+  --color-main-100: #ffe0e0;
+  --color-main-200: #ffc6c6;
+  --color-main-300: #ff9e9e;
+  --color-main-400: #ff6666;
+  --color-main-500: #fd3636;
+  --color-main-600: #eb1717;
+  --color-main-700: #c60f0f;
+  --color-main-800: #a31111;
+  --color-main-900: #731212;
+  --color-main-950: #4a0505;
+
+  --color-accent-50: #f7f4ef;
+  --color-accent-100: #ece3d5;
+  --color-accent-200: #dac8ae;
+  --color-accent-300: #c5a57f;
+  --color-accent-400: #b3885c;
+  --color-accent-500: #a3744d;
+  --color-accent-600: #8d5d41;
+  --color-accent-700: #724736;
+  --color-accent-800: #603d33;
+  --color-accent-900: #54362f;
+  --color-accent-950: #301b18;
+
+  --color-gray-50: #f6f6f6;
+  --color-gray-100: #e7e7e7;
+  --color-gray-200: #d1d1d1;
+  --color-gray-300: #b0b0b0;
+  --color-gray-400: #888888;
+  --color-gray-500: #6d6d6d;
+  --color-gray-600: #5d5d5d;
+  --color-gray-700: #4f4f4f;
+  --color-gray-800: #454545;
+  --color-gray-900: #3d3d3d;
+  --color-gray-950: #1f1f1f;
+
+  --font-sans: "Plus Jakarta Sans";
+  --font-script: "Meddon";
+  --font-script-2: "Momo Signature";
+}
+
+:root {
+  --ui-primary: var(--color-main-900);
+  --ui-secondary: white;
+  --ui-erorr: var(--color-red-400-);
+}
+
+.dark {
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
