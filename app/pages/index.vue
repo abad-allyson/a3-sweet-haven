@@ -357,6 +357,7 @@
 <script setup>
 useHead({
   title: "Sweet Haven by A3",
+  link: [{ rel: "icon", type: "image/png", href: "/icon.png" }],
 });
 
 import { CalendarDate } from "@internationalized/date";

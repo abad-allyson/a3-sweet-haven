@@ -53,6 +53,7 @@ definePageMeta({
 
 useHead({
   title: "Admin Login",
+  link: [{ rel: "icon", type: "image/png", href: "icon.png" }],
 });
 
 const supabase = useSupabaseClient();

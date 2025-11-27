@@ -93,6 +93,7 @@ definePageMeta({
 
 useHead({
   title: "Admin",
+  link: [{ rel: "icon", type: "image/png", href: "icon.png" }],
 });
 
 import { CalendarDate } from "@internationalized/date";
