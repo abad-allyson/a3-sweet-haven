@@ -1,6 +1,6 @@
 <!-- pages/admin/login.vue -->
 <template>
-  <UContainer class="min-h-screen flex items-center justify-center">
+  <UContainer class="min-h-screen flex flex-col items-center justify-center">
     <UCard class="p-4 shadow-xl w-sm outline-1 outline-gray-200">
       <template #header class="w-full">
         <p class="text-main-900 font-bold text-center text-xl">Admin Login</p>
@@ -40,6 +40,12 @@
           class="w-full justify-center mt-2"
           @click="handleLogin"
           >Login</UButton
+        >
+        <UButton
+          variant="soft"
+          class="w-full justify-center"
+          @click="navigateTo('/')"
+          >Go to Homepage</UButton
         >
       </UForm>
     </UCard>

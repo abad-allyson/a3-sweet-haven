@@ -13,9 +13,12 @@
     </template>
 
     <template #right>
+      <UButton variant="outline" color="secondary" @click="navigateTo('/')"
+        >Go to Homepage</UButton
+      >
       <UButton
         color="secondary"
-        class="text-main-900 font-bold"
+        class="text-main-900 font-bold ml-2"
         @click="handleLogout"
         >Logout</UButton
       >
