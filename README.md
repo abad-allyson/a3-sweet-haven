@@ -1,60 +1,104 @@
-# Nuxt Minimal Starter
+# Sweet Haven 🍰
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+**Live Site:** https://a3-sweet-haven.vercel.app/
 
-## Setup
+A modern bakery website built with Nuxt 3, featuring an admin dashboard for content management.
 
-Make sure to install dependencies:
+## Tech Stack
+
+| Category               | Technology                                |
+| ---------------------- | ----------------------------------------- |
+| **Framework**          | [Nuxt 3](https://nuxt.com/) (v4.2.0)      |
+| **UI Library**         | [@nuxt/ui](https://ui.nuxt.dev/) (v4.1.0) |
+| **Database**           | [Supabase](https://supabase.com/)         |
+| **Icons**              | Heroicons, Lucide                         |
+| **Validation**         | [Zod](https://zod.dev/)                   |
+| **Image Optimization** | [@nuxt/image](https://image.nuxtjs.org/)  |
+
+## Project Structure
+
+```
+a3-sweet-haven/
+├── app/
+│   ├── assets/css/       # Global styles
+│   ├── middleware/       # Route middleware (auth)
+│   ├── pages/            # Application pages
+│   │   ├── admin/        # Admin dashboard & login
+│   │   └── index.vue     # Home page
+│   ├── types/            # TypeScript definitions
+│   ├── app.config.ts     # App configuration
+│   └── app.vue           # Root component
+├── public/
+│   ├── gallery/         # Gallery images
+│   └── robots.txt       # SEO config
+├── nuxt.config.ts        # Nuxt configuration
+├── package.json         # Dependencies
+└── tsconfig.json        # TypeScript config
+```
+
+## Modules Used
+
+- **`@nuxt/ui`** — UI component library with Tailwind CSS
+- **`@nuxtjs/supabase`** — Supabase integration for backend
+- **`@nuxt/image`** — Image optimization and CDN
+- **`@iconify-json/lucide`** — Icon set for UI elements
+- **`@heroicons/react`** — Heroicons React components
+- **`@internationalized/date`** — Internationalized date handling
+- **`zod`** — Schema validation for forms
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- Yarn or npm
+
+### Installation
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
+# Install dependencies
 yarn install
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
+# Start development server
 yarn dev
 
-# bun
-bun run dev
+# Build for production
+yarn build
+
+# Generate static site
+yarn generate
 ```
 
-## Production
+## Environment Variables
 
-Build the application for production:
+Create a `.env` file with your Supabase credentials:
 
-```bash
-# npm
-npm run build
+```env
+SUPABASE_URL=your_supabase_url
+SUPABASE_KEY=your_supabase_anon_key
+```
 
-# pnpm
-pnpm build
+## Pages
+
+| Route          | Description                 |
+| -------------- | --------------------------- |
+| `/`            | Home page                   |
+| `/admin`       | Admin dashboard (protected) |
+| `/admin/login` | Admin login page            |
+
+## License
+
+MIT
 
 # yarn
+
 yarn build
 
 # bun
+
 bun run build
-```
+
+````
 
 Locally preview production build:
 
@@ -70,6 +114,6 @@ yarn preview
 
 # bun
 bun run preview
-```
+````
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
