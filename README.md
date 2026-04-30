@@ -2,11 +2,11 @@
 
 **Live Site:** https://a3-sweet-haven.vercel.app/
 
-## Homepage
-
-![Homepage](./public/screenshots/preview.gif)
-
 A modern bakery website built with Nuxt 3, featuring an admin dashboard for content management.
+
+## Preview
+
+![Preview](./public/screenshots/preview.gif)
 
 ## Tech Stack
 
